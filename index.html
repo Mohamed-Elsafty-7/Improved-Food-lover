@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food lovers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+      <script src="JS/menu_storage.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="images/logo.png" alt="logo" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="title">
+        <h1>Welcom to <span>Food Lovers</span> Restaurant</h1>
+        <p>Here you can find the most delecious food in the world.</p>
+        <a href="#">Book a Table</a>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="container">
+          <h1 class="about-h">The Food Lover History</h1>
+          <p class="about-p">More than +25 years of Experience.</p>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+                labore nihil libero doloremque perspiciatis minus voluptas,
+                reprehenderit deleniti ut. Dolorum est nulla sint. Ipsum
+                cupiditate natus impedit fugit fuga. Voluptas. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Labore, ab culpa
+                assumenda libero cum odit ea suscipit nesciunt fugit molestiae
+                sint eos ducimus consectetur iste repudiandae! Amet unde co
+                nsequuntur distinctio rerum quam quaerat non id, expedita
+                dolorum, magnam optio voluptatem. <br />Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Eius, quidem tenetur c ommodi
+                facere iste ex consectetur impedit numquam nihil quisquam!
+              </p>
+              <a class="about-a" href="#">LEARN MORE</a>
+            </div>
+            <div class="about-pics">
+              <img src="images/about_img.png" alt="about_images" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer">
+        <div class="container">
+          <h1 class="offer-h">Our Special Offers</h1>
+          <p class="offer-p">More than +25 years of Experience.</p>
+          <div class="offer-wrapper">
+            <div class="offer-items">
+              <div class="offer-item">
+                <img src="images/offer1.png" alt="pic" />
+                <h1>Quattro Pasta</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam consequatur tempore obcaecati, fugit dolorem est!
+                </p>
+                <p class="price"><span>$55.00</span> $18.00</p>
+              </div>
+
+              <div class="offer-item">
+                <img src="images/offer2.png" alt="pic" />
+                <h1>Vegiterian Pasta</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam consequatur tempore obcaecati, fugit dolorem est!
+                </p>
+                <p class="price"><span>$55.00</span> $18.00</p>
+              </div>
+
+              <div class="offer-item">
+                <img src="images/offer3.png" alt="pic" />
+                <h1>Glutem-Free Pasta</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam consequatur tempore obcaecati, fugit dolorem est!
+                </p>
+                <p class="price"><span>$55.00</span> $18.00</p>
+              </div>
+            </div>
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </section>
+
+      <section class="menu">
+        <div class="container">
+          <h1 class="menu-h">Our Special Menu</h1>
+          <p class="menu-p">Order two and get third for free!!</p>
+          <div class="menu-items">
+            <div class="menu-fr">
+              <script>
+                for (let i = 0; i < 6; i++) {
+                  document.write(`
+                            <div class="menu-item">
+                                <img src="${menu_items[i].image}" alt="food1">
+                                <div class="menu-item-text">
+                                    <div class="menu-item-h1"><h1 >${menu_items[i].name} </h1><span>${menu_items[i].price}</span></div>
+                                    <p >${menu_items[i].description}</p>
+                                </div>
+                            </div>
+                        `);
+                }
+              </script>
+            </div>
+
+            <div class="menu-fr">
+              <script>
+                for (let i = 6; i < 12; i++) {
+                  document.write(`
+                                <div class="menu-item">
+                                <img src="${menu_items[i].image}" alt="food1">
+                            <div class="menu-item-text">
+                                <div class="menu-item-h1"><h1 >${menu_items[i].name} </h1><span>${menu_items[i].price}</span></div>
+                                <p >${menu_items[i].description}</p>
+                            </div>
+                        </div>
+                        `);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="day-time">
+        <div class="container">
+          <div class="day-time-items">
+            <div class="day-time-item">
+              <img src="images/breckfastIcon.png" alt="" />
+              <h2>Breakfast</h2>
+              <p>8:00 AM to 10:00 AM</p>
+            </div>
+            <div class="day-time-item">
+              <img src="images/lunchIcon.png" alt="" />
+              <h2>Lunch</h2>
+              <p>4:00 PM to 7:00 PM</p>
+            </div>
+            <div class="day-time-item">
+              <img src="images/dinnerIcon.png" alt="" />
+              <h2>DINNER</h2>
+              <p>9:00 PM to 1:00 AM</p>
+            </div>
+            <div class="day-time-item">
+              <img src="images/dessertIcon.png" alt="" />
+              <h2>DESSERT</h2>
+              <p>ALL DAY</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="container">
+          <h2>OUR FOOD GALLERY</h2>
+          <div class="gallery-pics">
+            <script>
+              for (let I = 1; I <= 6; I++) {
+                document.write(`
+                    <img src="images/gallery${I}.jpg" alt="">
+                `);
+              }
+            </script>
+          </div>
+        </div>
+      </section>
+      <div class="box_container">
+        <div class="box_item">
+          <i id="prev" class="fa-solid fa-circle-left fa-2x"></i>
+          <i id="close" class="fa-solid fa-circle-xmark fa-2x"></i>
+          <i id="next" class="fa-solid fa-circle-right fa-2x"></i>
+        </div>
+      </div>
+
+      <section class="contact">
+        <div class="container">
+          <div class="contact-fr">
+            <div class="contact-item">
+              <h2>ADDRESS</h2>
+              <p><i class="fa-solid fa-location-dot"></i>DAMNHOUR,DOWNTOWN</p>
+              <p><i class="fa-solid fa-phone"></i> PHONE:1234565</p>
+              <p><i class="fa-solid fa-envelope"></i>SUPPORT@foodlover.com</p>
+            </div>
+            <div class="contact-item">
+              <h2>WORKING HOURS</h2>
+              <p>8:00 AM to 11:00 PM in weekdays</p>
+              <p>11:00 PM to 1:00 AM in weekends</p>
+            </div>
+            <div class="contact-item">
+              <h2>FOLLOW US</h2>
+              <div class="contact-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-fr">
+            <div class="contact-item">
+              <form action="" id="form">
+                <input
+                  class="inputs"
+                  type="text"
+                  placeholder="Full Name"
+                  id="name"
+                />
+                <div id="invalid_name"></div>
+
+                <input
+                  class="inputs"
+                  type="email"
+                  name=""
+                  id="email"
+                  placeholder="Email"
+                />
+                <div id="invalid_email"></div>
+
+                <input
+                  class="inputs"
+                  type="text"
+                  name=""
+                  id="subject"
+                  placeholder="Subject"
+                />
+                <div id="invalid_subject"></div>
+
+                <textarea
+                  class="inputs"
+                  name="message"
+                  id="message"
+                  cols="50"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+                <div id="invalid_message"></div>
+
+                <div>
+                  <button type="submit" id="btn_sub">SEND MESSAGE</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2025 reserved | Designed by Mohamed Elsafty</p>
+    </footer>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
